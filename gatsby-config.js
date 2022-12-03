@@ -45,14 +45,29 @@ module.exports = {
   {
       resolve: "gatsby-plugin-eslint",
       options: {
-        // Gatsby required rules directory
         rulePaths: [gatsbyRequiredRules],
-        // Default settings that may be omitted or customized
         stages: ["develop"],
         extensions: ["js", "jsx", "ts", "tsx"],
         exclude: ["node_modules", "bower_components", ".cache", "public"],
-        // Any additional eslint-webpack-plugin options below
-        // ...
+      
       },
-    },]
+    }, {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: [
+          "limelight",
+          "Roboto\:400,400i,700",
+          "Montserrat\:400,700" 
+        ],
+        display: "swap"
+      }
+    },{
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        resolveModules: [path.join(__dirname, "libs")],
+        assets: path.join(__dirname, "src", "assets"),
+        components: path.join(__dirname, "src", "components"),
+      },
+    },
+  ]
 };

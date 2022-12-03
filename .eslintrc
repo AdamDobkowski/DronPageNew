@@ -1,35 +1,4 @@
-// module.exports = {
-//   globals: {
-//     __PATH_PREFIX__: true,
-//   },
-//   extends: `react-app`,  
-// },{
-//   "rules": {
-//     "no-anonymous-exports-page-templates": "warn",
-//     "limited-exports-page-templates": "warn"
-//   }
-// },
-// {
-//   "parser": "babel-eslint", // uses babel-eslint transforms
-//   "settings": {
-//     "react": {
-//       "version": "detect" // detect react version
-//     }
-//   },
-//   "env": {
-//     "node": true // defines things like process.env when generating through node
-//   },
-//   "extends": [
-//     "eslint:recommended", // use recommended configs
-//     "plugin:react/recommended",
-//     "airbnb"
-//   ],
-//   "rules": {
-//     "no-anonymous-exports-page-templates": "warn",
-//     "limited-exports-page-templates": "warn"
-//   }, "parserOptions": {
-//         "sourceType": "module"}
-//   }
+
  {
     "root": true,
   "env": {
