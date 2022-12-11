@@ -1,13 +1,10 @@
 /** @format */
 
 import React, { useState } from 'react';
-
-import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Logoz from '../../images/Logo/logoz.png';
 import facebook from '../../images/Logo/facebook.svg';
 import instagram from '../../images/Logo/instagram.svg';
-
 import {
   OutWrapper,
   Wrapper,
