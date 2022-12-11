@@ -1,6 +1,5 @@
-
- {
-    "root": true,
+{
+  "root": true,
   "env": {
     "commonjs": true,
     "node": true,
@@ -21,7 +20,29 @@
   },
   "plugins": ["react", "import", "react-hooks"],
   "ignorePatterns": ["node_modules/"],
-  "rules": {},
+  "rules": {
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "warn",
+    "import/no-unresolved": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-vars": "off"
+  },
+  "overrides": [
+    {
+      "files": ["./src/pages*.jsx"],
+      "rules": {
+        "no-unused-expressions": "off",
+        "import/no-default-export": "off"
+      }
+    },
+    {
+      "files": ["./src/gatsby-browser.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ],
   "settings": {
     "react": {
       "version": "detect"
